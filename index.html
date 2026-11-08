@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F&amp;H Rénovation Luxembourg</title>
+<meta name="description" content="F&amp;H Rénovation Sàrl-S : peinture, carrelage, laminé, faux murs, faux plafonds, façades, terrasses et jardinage au Luxembourg. Devis gratuit au +352 621 574 343.">
+<meta property="og:title" content="F&amp;H Rénovation Sàrl-S – Rénovation au Luxembourg">
+<meta property="og:description" content="Peinture, carrelage, laminé, faux murs, faux plafonds, façades, terrasses et jardinage. Devis gratuit.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_LU">
+<meta name="theme-color" content="#1b2152">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 44'%3E%3Cpath d='M4 23 28 5l16 12' fill='none' stroke='%231b2152' stroke-width='6'/%3E%3Cpath d='M8 20v21' stroke='%231b2152' stroke-width='6'/%3E%3Crect x='44' y='4' width='8' height='37' fill='%231b2152'/%3E%3Cpath d='M15 31 28 21l13 10v10' fill='none' stroke='%232a86c9' stroke-width='5'/%3E%3Cpath d='M15 30v11' stroke='%232a86c9' stroke-width='5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "F&H Rénovation Sàrl-S",
+  "telephone": ["+352 621 574 343", "+352 661 240 196"],
+  "email": "fh.renovationlux@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "21 Rue Gabriel Lippmann",
+    "postalCode": "L-1943",
+    "addressLocality": "Luxembourg",
+    "addressCountry": "LU"
+  },
+  "areaServed": "Luxembourg",
+  "description": "Rénovation intérieure et extérieure : peinture, carrelage, laminé, faux murs, faux plafonds, façades, terrasses et jardinage."
+}
+</script>
+<style>
+:root{
+  /* Plan : la maison en coupe (blueprint) numérotée par métier → la même numérotation guide toute la page */
+  --navy:#1b2152;
+  --blue:#2a86c9;
+  --sky:#cfe2f4;
+  --paper:#f3f6fa;
+  --ink:#161b38;
+  --muted:#5a6282;
+  --line:#dbe2ec;
+  --white:#ffffff;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --radius:10px;
+  --wrap:1160px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.02;margin:0;text-wrap:balance;letter-spacing:.005em}
+p{margin:0}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:.95rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;font-family:var(--body);font-weight:600;font-size:1rem;text-decoration:none;border-radius:999px;padding:.85em 1.4em;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background-color .15s ease,border-color .15s ease}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.btn-primary{background:var(--blue);color:var(--white)}
+.btn-primary:hover{background:#2378b6;transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:var(--white)}
+.btn-ghost:hover{border-color:var(--white);transform:translateY(-1px)}
+.btn-dark{background:var(--navy);color:var(--white)}
+.btn-dark:hover{background:#252c66;transform:translateY(-1px)}
+
+/* Header */
+.site-head{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:46px;height:34px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:.92}
+.brand-fh{font-family:var(--display);font-weight:800;font-size:1.55rem;color:var(--blue);letter-spacing:.02em}
+.brand-sub{font-family:var(--display);font-weight:700;font-size:1.02rem;color:var(--navy)}
+.brand-sub small{font-size:.72em;color:var(--blue);font-weight:600;margin-left:2px}
+.nav{display:none;gap:26px;align-items:center}
+.nav a{text-decoration:none;font-weight:500;font-size:.97rem;color:var(--ink)}
+.nav a:hover{color:var(--blue)}
+.head-actions{display:flex;gap:10px;align-items:center}
+.head-call{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;color:var(--navy);font-variant-numeric:tabular-nums}
+.head-call svg{width:18px;height:18px;color:var(--blue)}
+.head-call span{display:none}
+.head-actions .btn{padding:.6em 1.1em;font-size:.95rem}
+.head-actions .btn-primary{display:none}
+
+/* Hero */
+.hero{position:relative;background-color:var(--navy);color:var(--white);overflow:hidden;
+  background-image:
+    linear-gradient(rgba(207,226,244,.09) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(207,226,244,.09) 1px,transparent 1px),
+    linear-gradient(rgba(207,226,244,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(207,226,244,.035) 1px,transparent 1px);
+  background-size:140px 140px,140px 140px,28px 28px,28px 28px;
+  background-position:-1px -1px}
+.hero .wrap{display:grid;gap:36px;padding-top:52px;padding-bottom:56px}
+.hero .eyebrow{color:var(--sky)}
+.hero h1{font-size:clamp(2.7rem,7.4vw,4.9rem);font-weight:800;margin-top:14px;text-transform:uppercase;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--blue);display:block}
+.hero-lead{margin-top:20px;max-width:34em;color:rgba(255,255,255,.84);font-size:1.08rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:26px 0 0;padding:0;list-style:none;font-size:.95rem;color:rgba(255,255,255,.8)}
+.hero-facts li{display:flex;align-items:center;gap:8px}
+.hero-facts li::before{content:"";width:8px;height:8px;border:2px solid var(--blue);transform:rotate(45deg)}
+
+.plan-card{border:1px solid rgba(207,226,244,.22);border-radius:14px;padding:14px 14px 16px;background:rgba(10,14,48,.28)}
+.plan{width:100%;height:auto;display:block;overflow:visible}
+.plan .ln{fill:none;stroke:var(--sky);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.plan .thin{fill:none;stroke:var(--sky);stroke-width:1.2;opacity:.75}
+.plan .dash{fill:none;stroke:var(--sky);stroke-width:2;stroke-dasharray:7 5}
+.plan .ext{fill:none;stroke:var(--sky);stroke-width:1;stroke-dasharray:3 4;opacity:.6}
+.plan .paint{fill:rgba(42,134,201,.32)}
+.plan .hatch{fill:url(#hatch)}
+.plan .leaf{fill:rgba(207,226,244,.12);stroke:var(--sky);stroke-width:1.6}
+.plan-label{font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.18em;fill:var(--sky);opacity:.85}
+.draw .ln,.draw .thin{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 1.5s ease-out both}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.marker{transform-box:fill-box;transform-origin:center;cursor:pointer;animation:pop .45s cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(1.05s + var(--i) * 70ms);transition:transform .2s ease}
+.marker circle{fill:var(--blue);stroke:var(--navy);stroke-width:3;transition:fill .2s ease}
+.marker text{font-family:var(--display);font-weight:800;font-size:17px;fill:var(--white);text-anchor:middle;pointer-events:none}
+.marker.on{transform:scale(1.3)}
+.marker.on circle{fill:var(--white)}
+.marker.on text{fill:var(--navy)}
+@keyframes pop{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:scale(1)}}
+.legend{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.legend a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:.9rem;font-weight:500;color:var(--white);border:1px solid rgba(207,226,244,.28);border-radius:999px;padding:5px 12px 5px 5px;transition:background-color .2s ease,border-color .2s ease}
+.legend b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--blue);font-family:var(--display);font-weight:800;font-size:.95rem}
+.legend a.on,.legend a:hover{background:rgba(42,134,201,.28);border-color:var(--blue)}
+
+/* Sections */
+section{scroll-margin-top:76px}
+.sec{padding:80px 0}
+.sec-head{display:grid;gap:12px;max-width:44rem;margin-bottom:40px}
+.sec-head h2{font-size:clamp(2.1rem,4.6vw,3.1rem);font-weight:700;color:var(--navy)}
+.sec-head p{color:var(--muted);max-width:38em}
+
+/* Services */
+.groups{display:grid;gap:40px}
+.group-title{display:flex;align-items:center;gap:14px;font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.group-title::after{content:"";flex:1;height:1px;background:var(--line)}
+.cards{display:grid;gap:16px;grid-template-columns:1fr}
+.card{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px 22px;display:grid;gap:10px;align-content:start;scroll-margin-top:90px;transition:border-color .2s ease,box-shadow .2s ease}
+.card:hover,.card:target{border-color:var(--blue);box-shadow:0 10px 30px -18px rgba(27,33,82,.45)}
+.card-num{font-family:var(--display);font-weight:800;font-size:3rem;line-height:.8;color:var(--blue)}
+.card h3{font-size:1.65rem;font-weight:700;color:var(--navy)}
+.card p{color:var(--muted);font-size:.98rem}
+.card ul{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:6px;font-size:.95rem}
+.card li{display:flex;gap:10px;align-items:baseline}
+.card li::before{content:"";flex:none;width:7px;height:7px;background:var(--blue);transform:translateY(-2px) rotate(45deg)}
+.full{margin-top:40px;background:var(--paper);border-radius:14px;padding:28px 24px;display:grid;gap:18px;align-items:center}
+.full h3{font-size:1.9rem;color:var(--navy)}
+.full p{color:var(--muted);margin-top:8px;max-width:40em}
+
+/* Gallery */
+.gallery-sec{background:var(--paper)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:-12px 0 22px}
+.chip{font:inherit;font-weight:600;font-size:.95rem;color:var(--navy);background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer;display:inline-flex;gap:8px;align-items:center;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.chip span{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.chip:hover{border-color:var(--blue)}
+.chip.on{background:var(--navy);border-color:var(--navy);color:var(--white)}
+.chip.on span{color:var(--sky)}
+.gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+.shot{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;background:var(--line);aspect-ratio:1/1}
+.shot[hidden]{display:none}
+.shot-btn{all:unset;display:block;width:100%;height:100%;cursor:zoom-in}
+.shot-btn:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.shot:hover img{transform:scale(1.04)}
+.shot figcaption{position:absolute;left:8px;bottom:8px;display:flex;flex-direction:column;gap:1px;background:rgba(27,33,82,.9);color:var(--white);padding:6px 10px;border-radius:7px;max-width:calc(100% - 16px);pointer-events:none}
+.shot figcaption b{font-family:var(--display);font-size:1.05rem;font-weight:700;letter-spacing:.02em;line-height:1.1}
+.shot figcaption span{display:none;font-size:.85rem;opacity:.85}
+.lb{position:fixed;inset:0;z-index:60;background:rgba(10,13,38,.94);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;padding:56px 8px 24px}
+.lb[hidden]{display:none}
+.lb-fig{margin:0;display:grid;gap:12px;justify-items:center;min-width:0}
+.lb-fig img{max-width:100%;max-height:calc(100vh - 150px);object-fit:contain;border-radius:8px}
+.lb-fig figcaption{color:var(--white);text-align:center;font-size:.95rem}
+.lb-fig figcaption b{font-family:var(--display);font-size:1.3rem;display:block}
+.lb button{font:inherit;color:var(--white);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:50%;width:46px;height:46px;font-size:1.7rem;line-height:1;cursor:pointer;display:grid;place-items:center}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb-close{position:absolute;top:10px;right:12px}
+.gallery-note{margin-top:22px;color:var(--muted);display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center}
+
+/* Why */
+.why{display:grid;gap:16px;grid-template-columns:1fr}
+.why-item{border-top:3px solid var(--navy);padding-top:16px;display:grid;gap:6px}
+.why-item h3{font-size:1.45rem;color:var(--navy)}
+.why-item p{color:var(--muted);font-size:.98rem}
+
+/* Steps */
+.steps-sec{background:var(--navy);color:var(--white)}
+.steps-sec .sec-head h2{color:var(--white)}
+.steps-sec .sec-head p{color:rgba(255,255,255,.75)}
+.steps-sec .eyebrow{color:var(--sky)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:step}
+.steps li{counter-increment:step;display:grid;grid-template-columns:auto 1fr;gap:6px 18px;padding:22px;border:1px solid rgba(207,226,244,.22);border-radius:var(--radius)}
+.steps li::before{content:counter(step);grid-row:span 2;font-family:var(--display);font-weight:800;font-size:3.2rem;line-height:.85;color:var(--blue)}
+.steps h3{font-size:1.5rem}
+.steps p{color:rgba(255,255,255,.78);font-size:.98rem}
+.steps-cta{margin-top:30px}
+
+/* FAQ */
+.faq{max-width:780px;display:grid;gap:10px}
+.faq details{border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 54px 18px 20px;font-weight:600;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:22px;top:50%;width:10px;height:10px;border-right:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:translateY(-70%) rotate(45deg);transition:transform .2s ease}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq details p{padding:0 20px 18px;color:var(--muted)}
+
+/* Contact */
+.contact-sec{background:var(--paper)}
+.contact{display:grid;gap:28px}
+.contact-info{display:grid;gap:12px;align-content:start}
+.info-row{display:flex;gap:14px;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;text-decoration:none}
+a.info-row:hover{border-color:var(--blue)}
+.info-row svg{width:22px;height:22px;color:var(--blue);flex:none;margin-top:2px}
+.info-row small{display:block;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.info-row strong{display:block;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums;word-break:break-word}
+.form{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px 22px;display:grid;gap:16px}
+.form h3{font-size:1.9rem;color:var(--navy)}
+.form .sub{color:var(--muted);font-size:.96rem;margin-top:-8px}
+.field{display:grid;gap:6px}
+.field label{font-weight:600;font-size:.93rem}
+.field input,.field select,.field textarea{font:inherit;font-size:1rem;color:var(--ink);background:var(--white);border:1.5px solid var(--line);border-radius:8px;padding:12px 14px;width:100%}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(42,134,201,.18)}
+.form-row{display:grid;gap:16px}
+.form .btn{width:100%}
+.form-note{font-size:.85rem;color:var(--muted)}
+.ready{display:none;background:#e9f3fb;border:1px solid var(--blue);border-radius:10px;padding:16px;gap:10px}
+.ready.show{display:grid}
+.ready p{font-weight:600;color:var(--navy)}
+
+/* Footer */
+.foot{background:#141943;color:rgba(255,255,255,.78);padding:56px 0 30px;font-size:.95rem}
+.foot-grid{display:grid;gap:32px}
+.foot .brand-fh{color:#5aa6dd}
+.foot .brand-sub{color:var(--white)}
+.foot h4{font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;color:var(--white);margin:0 0 12px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--white)}
+.foot-bottom{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:.85rem;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+/* Mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:repeat(3,1fr);background:var(--white);border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px;box-shadow:0 -8px 24px -16px rgba(27,33,82,.4)}
+.mbar a{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;font-size:.8rem;font-weight:600;color:var(--navy);padding:6px 0;border-radius:8px}
+.mbar a svg{width:22px;height:22px;color:var(--blue)}
+.mbar a.main{background:var(--blue);color:var(--white)}
+.mbar a.main svg{color:var(--white)}
+body{padding-bottom:74px}
+
+@media (min-width:640px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(3,1fr);gap:14px}
+  .shot{aspect-ratio:4/3}
+  .shot figcaption{left:12px;bottom:12px;padding:9px 13px}
+  .shot figcaption b{font-size:1.2rem}
+  .shot figcaption span{display:block}
+  .why{grid-template-columns:repeat(2,1fr);gap:28px 32px}
+  .form-row{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1.4fr 1fr 1fr}
+  .head-call span{display:inline}
+}
+@media (min-width:960px){
+  body{padding-bottom:0}
+  .mbar{display:none}
+  .nav{display:flex}
+  .head-actions .btn-primary{display:inline-flex}
+  .hero .wrap{grid-template-columns:1fr 1.08fr;align-items:center;gap:48px;padding-top:72px;padding-bottom:80px}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .g-floors .cards{grid-template-columns:repeat(2,1fr)}
+  .full{grid-template-columns:1fr auto;padding:32px 36px}
+  .why{grid-template-columns:repeat(4,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .contact{grid-template-columns:1fr 1.25fr;gap:36px}
+  .sec{padding:100px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1L4 20z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9 10.5h.01M12 10.5h.01M15 10.5h.01"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5 12 13l8.5-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 3h8l4 4v14H6z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="logo" viewBox="0 0 60 44">
+    <path d="M4 23 28 5l16 12" fill="none" stroke="#1b2152" stroke-width="6" stroke-linejoin="miter"/>
+    <path d="M8 20v21" stroke="#1b2152" stroke-width="6"/>
+    <rect x="44" y="4" width="8" height="37" fill="#1b2152"/>
+    <path d="M15 31 28 21l13 10v10" fill="none" stroke="#2a86c9" stroke-width="5"/>
+    <path d="M15 30v11" stroke="#2a86c9" stroke-width="5"/>
+    <g fill="#1b2152"><rect x="24.5" y="30" width="3" height="3"/><rect x="28.5" y="30" width="3" height="3"/><rect x="24.5" y="34" width="3" height="3"/><rect x="28.5" y="34" width="3" height="3"/></g>
+  </symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="F&amp;H Rénovation, accueil">
+      <svg aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand-text"><span class="brand-fh">F&amp;H</span><span class="brand-sub">Rénovation <small>Sàrl-S</small></span></span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#pourquoi">Pourquoi nous</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="head-actions">
+      <a class="head-call" href="tel:+352621574343"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>621 574 343</span></a>
+      <a class="btn btn-primary" href="#contact">Devis gratuit</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Entreprise de rénovation · Luxembourg</p>
+      <h1 id="hero-title">Rénovation complète, <em>du sol au plafond.</em></h1>
+      <p class="hero-lead">Peinture, carrelage, laminé, faux murs, faux plafonds, façades, terrasses et jardin. Une seule équipe pour tout votre chantier, à l’intérieur comme à l’extérieur.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact"><svg aria-hidden="true"><use href="#i-doc"/></svg>Demander un devis gratuit</a>
+        <a class="btn btn-ghost" href="tel:+352621574343"><svg aria-hidden="true"><use href="#i-phone"/></svg>+352 621 574 343</a>
+      </div>
+      <ul class="hero-facts">
+        <li>Devis gratuit</li>
+        <li>Intérieur &amp; extérieur</li>
+        <li>Partout au Luxembourg</li>
+      </ul>
+    </div>
+
+    <div class="plan-card">
+      <svg class="plan" viewBox="0 0 640 400" role="img" aria-labelledby="plan-title">
+        <title id="plan-title">Maison en coupe avec nos huit services numérotés</title>
+        <defs>
+          <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="6" stroke="#cfe2f4" stroke-width="1.2" opacity=".6"/>
+          </pattern>
+        </defs>
+        <text x="8" y="20" class="plan-label">COUPE A–A</text>
+        <text x="632" y="20" text-anchor="end" class="plan-label">F&amp;H RÉNOVATION</text>
+
+        <!-- remplissages -->
+        <rect class="paint" x="82" y="206" width="143" height="144"/>
+        <rect class="hatch" x="70" y="170" width="12" height="188"/>
+        <rect class="hatch" x="225" y="206" width="12" height="144"/>
+        <rect class="hatch" x="70" y="358" width="310" height="12"/>
+
+        <g class="draw">
+          <!-- toit -->
+          <path class="ln" pathLength="1" d="M48 172 225 58 402 172"/>
+          <path class="ln" pathLength="1" d="M70 170 225 72 380 170"/>
+          <!-- dalle plafond -->
+          <path class="ln" pathLength="1" d="M82 170H368"/>
+          <!-- murs -->
+          <path class="ln" pathLength="1" d="M70 170V370M82 170V358"/>
+          <path class="ln" pathLength="1" d="M368 170V262M380 170V262M368 262H380"/>
+          <path class="thin" pathLength="1" d="M374 264V356"/>
+          <!-- dalle sol + terrain -->
+          <path class="ln" pathLength="1" d="M70 358H380V370M10 370H630"/>
+          <!-- faux plafond : suspentes -->
+          <path class="thin" pathLength="1" d="M110 171V204M165 171V204M220 171V204M320 171V204M355 171V204"/>
+          <!-- faux mur -->
+          <path class="ln" pathLength="1" d="M225 206V350M237 206V350"/>
+          <!-- carrelage -->
+          <path class="ln" pathLength="1" d="M82 350H225"/>
+          <path class="thin" pathLength="1" d="M95 350V358M108 350V358M121 350V358M134 350V358M147 350V358M160 350V358M173 350V358M186 350V358M199 350V358M212 350V358"/>
+          <!-- laminé -->
+          <path class="ln" pathLength="1" d="M237 352H368"/>
+          <path class="thin" pathLength="1" d="M262 352V358M300 352V358M338 352V358"/>
+          <!-- rouleau de peinture -->
+          <path class="ln" pathLength="1" d="M172 226H198V236H172ZM185 236V244H194V262"/>
+          <!-- terrasse + pergola -->
+          <path class="ln" pathLength="1" d="M380 362H514V370"/>
+          <path class="thin" pathLength="1" d="M406 362V370M432 362V370M458 362V370M484 362V370"/>
+          <path class="ln" pathLength="1" d="M380 262H512M500 262V362M508 262V362"/>
+          <!-- jardin -->
+          <path class="thin" pathLength="1" d="M528 370l3-8 3 8M546 370l3-9 3 9M614 370l3-8 3 8M630 370l-3-7"/>
+          <!-- cote sol / plafond -->
+          <path class="thin" pathLength="1" d="M40 204V350M34 210 46 198M34 356 46 344"/>
+        </g>
+        <path class="dash" d="M82 204H368"/>
+        <path class="ext" d="M30 204H68M30 350H68"/>
+        <circle class="leaf" cx="578" cy="348" r="21"/>
+        <circle class="leaf" cx="604" cy="354" r="15"/>
+        <circle class="leaf" cx="556" cy="356" r="13"/>
+        <text class="plan-label" transform="translate(27 277) rotate(-90)" text-anchor="middle" style="font-size:11px">DU SOL AU PLAFOND</text>
+
+        <!-- repères -->
+        <g transform="translate(270 187)"><g class="marker" data-n="1" style="--i:1"><circle r="13"/><text y="6">1</text></g></g>
+        <g transform="translate(130 268)"><g class="marker" data-n="2" style="--i:2"><circle r="13"/><text y="6">2</text></g></g>
+        <g transform="translate(231 290)"><g class="marker" data-n="3" style="--i:3"><circle r="13"/><text y="6">3</text></g></g>
+        <g transform="translate(150 330)"><g class="marker" data-n="4" style="--i:4"><circle r="13"/><text y="6">4</text></g></g>
+        <g transform="translate(302 330)"><g class="marker" data-n="5" style="--i:5"><circle r="13"/><text y="6">5</text></g></g>
+        <g transform="translate(76 300)"><g class="marker" data-n="6" style="--i:6"><circle r="13"/><text y="6">6</text></g></g>
+        <g transform="translate(446 340)"><g class="marker" data-n="7" style="--i:7"><circle r="13"/><text y="6">7</text></g></g>
+        <g transform="translate(578 308)"><g class="marker" data-n="8" style="--i:8"><circle r="13"/><text y="6">8</text></g></g>
+      </svg>
+      <ol class="legend" aria-label="Nos services">
+        <li><a href="#s1" data-n="1"><b>1</b>Faux plafonds</a></li>
+        <li><a href="#s2" data-n="2"><b>2</b>Peinture</a></li>
+        <li><a href="#s3" data-n="3"><b>3</b>Faux murs</a></li>
+        <li><a href="#s4" data-n="4"><b>4</b>Carrelage</a></li>
+        <li><a href="#s5" data-n="5"><b>5</b>Laminé</a></li>
+        <li><a href="#s6" data-n="6"><b>6</b>Façade</a></li>
+        <li><a href="#s7" data-n="7"><b>7</b>Terrasse</a></li>
+        <li><a href="#s8" data-n="8"><b>8</b>Jardinage</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Nos services</p>
+      <h2 id="services-title">Huit métiers, une seule équipe pour votre chantier</h2>
+      <p>Que ce soit une pièce à rafraîchir ou une maison entière à rénover, nous nous occupons de tout, de l’intérieur jusqu’au jardin.</p>
+    </div>
+
+    <div class="groups">
+      <div class="g-walls">
+        <h3 class="group-title">Murs &amp; plafonds</h3>
+        <div class="cards">
+          <article class="card" id="s1">
+            <span class="card-num">01</span>
+            <h3>Faux plafonds</h3>
+            <p>Plafonds suspendus en plaques de plâtre pour cacher des câbles, baisser une hauteur ou moderniser une pièce.</p>
+            <ul><li>Plaques de plâtre sur ossature</li><li>Découpes prévues pour les spots</li><li>Finition prête à peindre</li></ul>
+          </article>
+          <article class="card" id="s2">
+            <span class="card-num">02</span>
+            <h3>Peinture</h3>
+            <p>Murs, plafonds et boiseries. Une préparation soignée pour une finition nette et durable.</p>
+            <ul><li>Enduit, ponçage et préparation</li><li>Murs d’accent et couleurs au choix</li><li>Sols et meubles protégés</li></ul>
+          </article>
+          <article class="card" id="s3">
+            <span class="card-num">03</span>
+            <h3>Faux murs</h3>
+            <p>Cloisons en plaques de plâtre pour créer une pièce, séparer un espace ou habiller un mur.</p>
+            <ul><li>Cloisons sur ossature métallique</li><li>Création de pièces ou de rangements</li><li>Finition prête à peindre</li></ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="g-floors">
+        <h3 class="group-title">Sols</h3>
+        <div class="cards">
+          <article class="card" id="s4">
+            <span class="card-num">04</span>
+            <h3>Carrelage</h3>
+            <p>Sols et murs de salle de bain, cuisine, entrée ou séjour, y compris les grands formats.</p>
+            <ul><li>Sols et murs</li><li>Salle de bain et cuisine</li><li>Carreaux grand format</li></ul>
+          </article>
+          <article class="card" id="s5">
+            <span class="card-num">05</span>
+            <h3>Laminé</h3>
+            <p>Pose de sol stratifié dans toutes les pièces, avec des finitions propres jusqu’aux plinthes.</p>
+            <ul><li>Sous-couche adaptée</li><li>Plinthes assorties</li><li>Seuils et raccords</li></ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="g-ext">
+        <h3 class="group-title">Extérieur</h3>
+        <div class="cards">
+          <article class="card" id="s6">
+            <span class="card-num">06</span>
+            <h3>Façade</h3>
+            <p>Rénovation et peinture de façades pour redonner de l’éclat à votre maison.</p>
+            <ul><li>Préparation du support</li><li>Peinture de façade</li><li>Choix des couleurs avec vous</li></ul>
+          </article>
+          <article class="card" id="s7">
+            <span class="card-num">07</span>
+            <h3>Terrasse</h3>
+            <p>Terrasses carrelées pour profiter de l’extérieur, avec des bordures nettes.</p>
+            <ul><li>Carrelage extérieur</li><li>Dalles grand format</li><li>Bordures et finitions</li></ul>
+          </article>
+          <article class="card" id="s8">
+            <span class="card-num">08</span>
+            <h3>Jardinage</h3>
+            <p>Entretien du jardin autour de la maison, pour un extérieur propre toute l’année.</p>
+            <ul><li>Tonte de la pelouse</li><li>Taille des haies</li><li>Nettoyage du jardin</li></ul>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="full">
+      <div>
+        <h3>Rénovation complète</h3>
+        <p>Appartement ou maison : nous coordonnons tous les travaux, dans le bon ordre, avec un seul devis et un seul interlocuteur.</p>
+      </div>
+      <a class="btn btn-dark" href="#contact">Parler de mon projet</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec gallery-sec" id="realisations" aria-labelledby="real-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Réalisations</p>
+      <h2 id="real-title">Quelques chantiers récents</h2>
+      <p>Des photos de nos travaux, à l’intérieur comme à l’extérieur.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrer les photos">
+      <button type="button" class="chip on" data-f="all" aria-pressed="true">Tous <span></span></button>
+      <button type="button" class="chip" data-f="peinture" aria-pressed="false">Peinture <span></span></button>
+      <button type="button" class="chip" data-f="carrelage" aria-pressed="false">Carrelage <span></span></button>
+      <button type="button" class="chip" data-f="exterieur" aria-pressed="false">Extérieur <span></span></button>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure class="shot" data-cat="exterieur peinture">
+        <button type="button" class="shot-btn" data-full="facade.jpg" aria-label="Agrandir : Façade"><img src="facade-s.jpg" alt="Façade d’une maison repeinte en jaune clair" width="675" height="900" loading="lazy" decoding="async" style="object-position:50% 40%"></button>
+        <figcaption><b>Façade</b><span>Peinture de façade, maison individuelle</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="carrelage">
+        <button type="button" class="shot-btn" data-full="salle-de-bain.jpg" aria-label="Agrandir : Salle de bain"><img src="salle-de-bain-s.jpg" alt="Salle de bain avec carrelage gris grand format au sol et aux murs" width="900" height="405" loading="lazy" decoding="async" style="object-position:60% 50%"></button>
+        <figcaption><b>Salle de bain</b><span>Carrelage grand format, sol et murs</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="peinture">
+        <button type="button" class="shot-btn" data-full="mur-jaune.jpg" aria-label="Agrandir : Mur d’accent jaune"><img src="mur-jaune-s.jpg" alt="Pièce blanche avec un mur d’accent jaune" width="900" height="427" loading="lazy" decoding="async" style="object-position:40% 50%"></button>
+        <figcaption><b>Mur d’accent jaune</b><span>Peinture intérieure</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="exterieur carrelage">
+        <button type="button" class="shot-btn" data-full="terrasse-jardin.jpg" aria-label="Agrandir : Terrasse"><img src="terrasse-jardin-s.jpg" alt="Terrasse en carrelage gris foncé grand format devant une maison" width="405" height="900" loading="lazy" decoding="async" style="object-position:50% 58%"></button>
+        <figcaption><b>Terrasse</b><span>Carrelage extérieur grand format</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="peinture">
+        <button type="button" class="shot-btn" data-full="chambre-anthracite.jpg" aria-label="Agrandir : Peinture &amp; laminé"><img src="chambre-anthracite-s.jpg" alt="Chambre avec mur anthracite et sol stratifié chêne clair" width="900" height="675" loading="lazy" decoding="async" style="object-position:55% 50%"></button>
+        <figcaption><b>Peinture &amp; laminé</b><span>Mur anthracite, sol stratifié</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="carrelage">
+        <button type="button" class="shot-btn" data-full="douche.jpg" aria-label="Agrandir : Douche"><img src="douche-s.jpg" alt="Douche carrelée avec niches intégrées dans le mur" width="405" height="900" loading="lazy" decoding="async" style="object-position:50% 55%"></button>
+        <figcaption><b>Douche</b><span>Niches intégrées, carrelage mural</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="exterieur carrelage">
+        <button type="button" class="shot-btn" data-full="terrasse-balcon.jpg" aria-label="Agrandir : Terrasse de balcon"><img src="terrasse-balcon-s.jpg" alt="Terrasse de balcon en carrelage effet terrazzo" width="683" height="900" loading="lazy" decoding="async" style="object-position:50% 50%"></button>
+        <figcaption><b>Terrasse de balcon</b><span>Carrelage effet terrazzo</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="carrelage">
+        <button type="button" class="shot-btn" data-full="carrelage-bois.jpg" aria-label="Agrandir : Carrelage effet bois"><img src="carrelage-bois-s.jpg" alt="Sol en carrelage effet bois pendant le chantier" width="900" height="405" loading="lazy" decoding="async" style="object-position:50% 55%"></button>
+        <figcaption><b>Carrelage effet bois</b><span>Sol de séjour, chantier en cours</span></figcaption>
+      </figure>
+      <figure class="shot" data-cat="peinture">
+        <button type="button" class="shot-btn" data-full="mur-brun.jpg" aria-label="Agrandir : Mur d’accent brun"><img src="mur-brun-s.jpg" alt="Pièce blanche avec un mur d’accent brun foncé" width="900" height="427" loading="lazy" decoding="async" style="object-position:60% 50%"></button>
+        <figcaption><b>Mur d’accent brun</b><span>Peinture intérieure</span></figcaption>
+      </figure>
+    </div>
+    <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo agrandie" hidden>
+      <button type="button" class="lb-close" id="lb-close" aria-label="Fermer">×</button>
+      <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Photo précédente">‹</button>
+      <figure class="lb-fig"><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+      <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Photo suivante">›</button>
+    </div>
+    <div class="gallery-note">
+      <span>Vous voulez voir d’autres chantiers ? Demandez-nous des photos sur WhatsApp.</span>
+      <a class="btn btn-dark" href="https://wa.me/352621574343" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pourquoi" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Pourquoi nous</p>
+      <h2 id="why-title">Pourquoi choisir F&amp;H Rénovation</h2>
+    </div>
+    <div class="why">
+      <div class="why-item"><h3>Une seule équipe</h3><p>Du faux plafond à la terrasse, vous avez un seul interlocuteur pour tout le chantier.</p></div>
+      <div class="why-item"><h3>Devis gratuit et clair</h3><p>Nous venons voir, nous mesurons, et vous recevez un prix clair avant le début des travaux.</p></div>
+      <div class="why-item"><h3>Chantier propre</h3><p>Sols et meubles protégés, et un chantier rangé à la fin de chaque journée.</p></div>
+      <div class="why-item"><h3>Partout au Luxembourg</h3><p>Basés à Luxembourg, nous intervenons dans tout le pays.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec steps-sec" aria-labelledby="steps-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Comment ça se passe</p>
+      <h2 id="steps-title">Votre projet en trois étapes</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Vous nous contactez</h3><p>Par téléphone ou WhatsApp. Envoyez-nous quelques photos de ce que vous voulez rénover.</p></li>
+      <li><h3>Visite et devis gratuit</h3><p>Nous passons voir le chantier et vous envoyons un devis détaillé, sans engagement.</p></li>
+      <li><h3>Les travaux</h3><p>Nous réalisons les travaux à la date convenue, puis nous faisons le tour du chantier avec vous.</p></li>
+    </ol>
+    <div class="steps-cta"><a class="btn btn-primary" href="#contact">Obtenir mon devis</a></div>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">FAQ</p>
+      <h2 id="faq-title">Questions fréquentes</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Le devis est-il gratuit ?</summary><p>Oui, le devis est gratuit et sans engagement.</p></details>
+      <details><summary>Dans quelles communes intervenez-vous ?</summary><p>Nous intervenons partout au Luxembourg, depuis notre siège à Luxembourg.</p></details>
+      <details><summary>Pouvez-vous rénover tout un appartement ou une maison ?</summary><p>Oui. Peinture, sols, faux plafonds, cloisons, façade : une seule équipe s’occupe de tout le chantier.</p></details>
+      <details><summary>Puis-je envoyer des photos pour avoir une première idée du prix ?</summary><p>Oui, envoyez vos photos sur WhatsApp au +352 621 574 343. Nous vous répondons et fixons une visite si nécessaire.</p></details>
+      <details><summary>Combien de temps durent les travaux ?</summary><p>Cela dépend du chantier. La durée est indiquée dans le devis, avant le début des travaux.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact-sec" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Demandez votre devis gratuit</h2>
+      <p>Appelez-nous, écrivez-nous sur WhatsApp ou remplissez le formulaire.</p>
+    </div>
+    <div class="contact">
+      <div class="contact-info">
+        <a class="info-row" href="tel:+352621574343"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><small>Téléphone</small><strong>+352 621 574 343</strong></span></a>
+        <a class="info-row" href="tel:+352661240196"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><small>Téléphone</small><strong>+352 661 240 196</strong></span></a>
+        <a class="info-row" href="https://wa.me/352621574343" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg><span><small>WhatsApp</small><strong>+352 621 574 343</strong></span></a>
+        <a class="info-row" href="mailto:fh.renovationlux@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg><span><small>E-mail</small><strong>fh.renovationlux@gmail.com</strong></span></a>
+        <a class="info-row" href="https://www.google.com/maps/search/?api=1&amp;query=21+Rue+Gabriel+Lippmann+L-1943+Luxembourg" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg><span><small>Adresse</small><strong>21 Rue Gabriel Lippmann<br>L-1943 Luxembourg</strong></span></a>
+      </div>
+
+      <form class="form" id="quote" novalidate>
+        <h3>Votre demande</h3>
+        <p class="sub">Votre message s’ouvre dans WhatsApp, prêt à être envoyé.</p>
+        <div class="form-row">
+          <div class="field"><label for="f-name">Nom *</label><input id="f-name" name="fullname" autocomplete="name" required></div>
+          <div class="field"><label for="f-tel">Téléphone *</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        </div>
+        <div class="field">
+          <label for="f-service">Type de travaux</label>
+          <select id="f-service" name="service">
+            <option>Rénovation complète</option>
+            <option>Peinture</option>
+            <option>Carrelage</option>
+            <option>Laminé</option>
+            <option>Faux murs</option>
+            <option>Faux plafonds</option>
+            <option>Façade</option>
+            <option>Terrasse</option>
+            <option>Jardinage</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-msg">Votre projet</label><textarea id="f-msg" name="msg" placeholder="Ex. : peinture de 3 chambres et pose de laminé dans le salon, à Strassen."></textarea></div>
+        <p class="form-note" id="f-error" role="alert" hidden>Merci d’indiquer votre nom et votre numéro de téléphone.</p>
+        <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Préparer mon message WhatsApp</button>
+        <div class="ready" id="ready">
+          <p>Votre message est prêt. Appuyez sur le bouton pour l’envoyer.</p>
+          <a class="btn btn-dark" id="ready-link" href="https://wa.me/352621574343" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Envoyer sur WhatsApp</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="F&amp;H Rénovation, accueil">
+          <svg aria-hidden="true" style="background:#fff;border-radius:6px;padding:3px;width:52px;height:40px"><use href="#logo"/></svg>
+          <span class="brand-text"><span class="brand-fh">F&amp;H</span><span class="brand-sub">Rénovation <small>Sàrl-S</small></span></span>
+        </a>
+        <p style="margin-top:16px;max-width:30em">Aménagement intérieur, peinture, carrelage, façades, terrasses et jardin. Partout au Luxembourg.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#s2">Peinture</a></li>
+          <li><a href="#s4">Carrelage</a></li>
+          <li><a href="#s5">Laminé</a></li>
+          <li><a href="#s1">Faux plafonds &amp; faux murs</a></li>
+          <li><a href="#s6">Façade</a></li>
+          <li><a href="#s7">Terrasse &amp; jardinage</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+352621574343">+352 621 574 343</a></li>
+          <li><a href="tel:+352661240196">+352 661 240 196</a></li>
+          <li><a href="mailto:fh.renovationlux@gmail.com">fh.renovationlux@gmail.com</a></li>
+          <li>21 Rue Gabriel Lippmann, L-1943 Luxembourg</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 F&amp;H Rénovation Sàrl-S</span>
+      <span>Rénovation intérieure et extérieure au Luxembourg</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Contact rapide">
+  <a href="tel:+352621574343"><svg aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+  <a href="https://wa.me/352621574343" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
+  <a class="main" href="#contact"><svg aria-hidden="true"><use href="#i-doc"/></svg>Devis</a>
+</nav>
+
+<script>
+(function(){
+  var markers=document.querySelectorAll('.marker');
+  var chips=document.querySelectorAll('.legend a');
+  function set(n){
+    markers.forEach(function(m){m.classList.toggle('on',m.getAttribute('data-n')===n)});
+    chips.forEach(function(c){c.classList.toggle('on',c.getAttribute('data-n')===n)});
+  }
+  chips.forEach(function(c){
+    var n=c.getAttribute('data-n');
+    c.addEventListener('mouseenter',function(){set(n)});
+    c.addEventListener('focus',function(){set(n)});
+    c.addEventListener('mouseleave',function(){set(null)});
+    c.addEventListener('blur',function(){set(null)});
+  });
+  markers.forEach(function(m){
+    var n=m.getAttribute('data-n');
+    m.addEventListener('mouseenter',function(){set(n)});
+    m.addEventListener('mouseleave',function(){set(null)});
+    m.addEventListener('click',function(){
+      var t=document.getElementById('s'+n);
+      if(t){t.scrollIntoView({behavior:'smooth',block:'center'});}
+    });
+  });
+
+  // Galerie : filtres + agrandissement
+  var shots=[].slice.call(document.querySelectorAll('#gallery .shot'));
+  var fchips=[].slice.call(document.querySelectorAll('.filters .chip'));
+  fchips.forEach(function(c){
+    var f=c.getAttribute('data-f');
+    c.querySelector('span').textContent=shots.filter(function(s){return f==='all'||s.getAttribute('data-cat').split(' ').indexOf(f)>-1}).length;
+    c.addEventListener('click',function(){
+      fchips.forEach(function(x){var on=x===c;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
+      shots.forEach(function(s){s.hidden=!(f==='all'||s.getAttribute('data-cat').split(' ').indexOf(f)>-1)});
+    });
+  });
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lb-img'),lbCap=document.getElementById('lb-cap');
+  var cur=0,last=null;
+  function visible(){return shots.filter(function(s){return !s.hidden})}
+  function show(i){
+    var v=visible();if(!v.length)return;
+    cur=(i+v.length)%v.length;
+    var s=v[cur],b=s.querySelector('.shot-btn'),im=b.querySelector('img');
+    lbImg.src=b.getAttribute('data-full');lbImg.alt=im.alt;
+    lbCap.innerHTML=s.querySelector('figcaption').innerHTML;
+  }
+  function openLb(s){last=document.activeElement;show(visible().indexOf(s));lb.hidden=false;document.body.style.overflow='hidden';document.getElementById('lb-close').focus()}
+  function closeLb(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus()}
+  shots.forEach(function(s){s.querySelector('.shot-btn').addEventListener('click',function(){openLb(s)})});
+  document.getElementById('lb-close').addEventListener('click',closeLb);
+  document.getElementById('lb-prev').addEventListener('click',function(){show(cur-1)});
+  document.getElementById('lb-next').addEventListener('click',function(){show(cur+1)});
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden)return;
+    if(e.key==='Escape')closeLb();
+    if(e.key==='ArrowLeft')show(cur-1);
+    if(e.key==='ArrowRight')show(cur+1);
+  });
+  var tx=null;
+  lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){if(tx===null)return;var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)show(d<0?cur+1:cur-1);tx=null});
+
+  var form=document.getElementById('quote');
+  var err=document.getElementById('f-error');
+  var ready=document.getElementById('ready');
+  var link=document.getElementById('ready-link');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var el=form.elements;
+    var name=el.fullname.value.trim(), tel=el.tel.value.trim();
+    if(!name||!tel){err.hidden=false;(name?el.tel:el.fullname).focus();return;}
+    err.hidden=true;
+    var msg=el.msg.value.trim();
+    var txt='Bonjour F&H Rénovation, je m’appelle '+name+'.\n'+
+      'Je souhaite un devis pour : '+el.service.value+'.\n'+
+      (msg?msg+'\n':'')+
+      'Mon numéro : '+tel;
+    link.href='https://wa.me/352621574343?text='+encodeURIComponent(txt);
+    ready.classList.add('show');
+    link.focus();
+  });
+})();
+</script>
+</body>
+</html>
